@@ -1,0 +1,43 @@
+@use "../../shared/shared.scss" as *;
+:host {
+    width: 100%;
+}
+.title {
+    color: $light-text2;
+}
+.toggle-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gray-span {
+    color: $light-text1;
+    font-size: 14px;
+    font-weight: bold;
+}
+.underline {
+    display: block;
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+::ng-deep .mdc-switch__icon.mdc-switch__icon--off {
+    display: none;
+}
+::ng-deep .mdc-switch__icon.mdc-switch__icon--on {
+    display: none;
+}
+::ng-deep .mdc-switch__track::after {
+    background: $toggle !important;
+}
+::ng-deep .mdc-switch:enabled .mdc-switch__track::before {
+    background: $toggle !important;
+}
+.mat-mdc-slide-toggle {
+    --mdc-switch-unselected-handle-color: $white;
+    --mdc-switch-selected-hover-handle-color: #1a237e;
+    --mdc-switch-unselected-focus-handle-color: $white;
+    --mdc-switch-unselected-pressed-handle-color: $white;
+    --mdc-switch-unselected-hover-handle-color: $white;
+}

@@ -1,0 +1,75 @@
+@use "../../shared/shared.scss" as *;
+:host {
+    width: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    justify-items: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $card-bg-light;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+@mixin line-above($value1) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background: $value1;
+}
+.fb-line-above {
+    @include line-above($facebook-headline);
+}
+.tw-line-above {
+    @include line-above($twitter-headline);
+}
+.ig-line-above {
+    @include line-above($instagram-headline);
+}
+.yb-line-above {
+    @include line-above($youtube-headline);
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.margin-bottom-10px {
+    margin-bottom: 10px;
+}
+.card-title {
+    font-size: 12px;
+    color: $light-text1;
+}
+.number {
+    font-weight: bold;
+    font-size: 3rem;
+}
+.followers {
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: $light-text1;
+}
+.today {
+    color: $green-text;
+    font-size: 12px;
+    transform: translateY(10px);
+}
+.color-red {
+    color: $red-text;
+}
