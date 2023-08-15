@@ -7,6 +7,7 @@
     &.dark-text2 {
         @extend .dark-text2;
     }
+    transition: color 1s ease;
 }
 .toggle-cont {
     display: flex;
@@ -20,6 +21,7 @@
     &.dark-text1 {
         @extend .dark-text1;
     }
+    transition: color 1s ease;
 }
 .underline {
     display: block;

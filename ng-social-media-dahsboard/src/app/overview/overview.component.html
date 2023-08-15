@@ -51,7 +51,9 @@
     </div>
     <!-- 3 -->
     <div class="card" [ngClass]="{ 'dark-card-bg': darkModeIsOn }">
-        <div class="reaction">Likes</div>
+        <div class="reaction" [ngClass]="{ 'dark-text1': darkModeIsOn }">
+            Likes
+        </div>
         <svg
             class="icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +82,9 @@
     </div>
     <!-- 4 -->
     <div class="card" [ngClass]="{ 'dark-card-bg': darkModeIsOn }">
-        <div class="reaction">Page Views</div>
+        <div class="reaction" [ngClass]="{ 'dark-text1': darkModeIsOn }">
+            Page Views
+        </div>
         <svg
             class="icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +113,9 @@
     </div>
     <!-- 5 -->
     <div class="card" [ngClass]="{ 'dark-card-bg': darkModeIsOn }">
-        <div class="reaction">Retweets</div>
+        <div class="reaction" [ngClass]="{ 'dark-text1': darkModeIsOn }">
+            Retweets
+        </div>
         <svg
             class="icon"
             xmlns="http://www.w3.org/2000/svg"
