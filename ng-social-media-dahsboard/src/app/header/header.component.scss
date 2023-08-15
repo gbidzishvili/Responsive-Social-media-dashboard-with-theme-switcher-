@@ -4,6 +4,9 @@
 }
 .title {
     color: $light-text2;
+    &.dark-text2 {
+        @extend .dark-text2;
+    }
 }
 .toggle-cont {
     display: flex;
@@ -14,6 +17,9 @@
     color: $light-text1;
     font-size: 14px;
     font-weight: bold;
+    &.dark-text1 {
+        @extend .dark-text1;
+    }
 }
 .underline {
     display: block;
@@ -40,4 +46,17 @@
     --mdc-switch-unselected-focus-handle-color: $white;
     --mdc-switch-unselected-pressed-handle-color: $white;
     --mdc-switch-unselected-hover-handle-color: $white;
+}
+::ng-deep .mdc-switch .mdc-switch__handle-track {
+    width: 17px !important;
+    margin-left: 3px !important;
+}
+::ng-deep .mdc-switch__track {
+    width: 41px !important;
+    height: 18px !important;
+    border-radius: 30px !important;
+}
+::ng-deep .mdc-switch__handle {
+    width: 14px !important;
+    height: 14px !important;
 }
