@@ -1,0 +1,14 @@
+@use "./color-pallete.scss" as *;
+
+.dark {
+  background-color: $dark-bg;
+}
+.dark-card-bg {
+  background-color: $dark-card-bg;
+}
+.dark-text1 {
+  color: $dark-text1;
+}
+.dark-text2 {
+  color: $dark-text2;
+}

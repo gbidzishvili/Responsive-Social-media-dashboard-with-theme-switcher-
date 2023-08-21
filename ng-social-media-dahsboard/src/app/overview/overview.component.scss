@@ -44,7 +44,7 @@
     &.dark-card-bg {
         @extend .dark-card-bg;
     }
-    transition: background-color 1s ease;
+    transition: background-color 0.2s ease;
 }
 .percentage {
     display: flex;
@@ -73,7 +73,7 @@
     &.dark-text2 {
         @extend .dark-text2;
     }
-    transition: color 1s ease;
+    transition: color 0.2s ease;
 }
 .color-red {
     color: $red-text;

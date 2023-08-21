@@ -8,9 +8,10 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardsComponent } from './cards/cards.component';
 import { OverviewComponent } from './overview/overview.component';
+import { CheckboxComponent } from './checkbox/checkbox.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LayoutComponent, CardsComponent, OverviewComponent],
+  declarations: [AppComponent, HeaderComponent, LayoutComponent, CardsComponent, OverviewComponent, CheckboxComponent],
   imports: [BrowserModule, BrowserAnimationsModule, MatSlideToggleModule],
   providers: [],
   bootstrap: [AppComponent],

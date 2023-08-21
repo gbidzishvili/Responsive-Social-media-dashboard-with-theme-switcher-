@@ -36,7 +36,7 @@
     &.dark-card-bg {
         @extend .dark-card-bg;
     }
-    transition: background-color 1s ease;
+    transition: background-color 0.2s ease;
 }
 
 @mixin line-above($value1) {
@@ -73,7 +73,7 @@
     &.dark-text1 {
         @extend .dark-text1;
     }
-    transition: color 1s ease;
+    transition: color 0.2s ease;
 }
 .number {
     font-weight: bold;
@@ -81,7 +81,7 @@
     &.dark-text2 {
         @extend .dark-text2;
     }
-    transition: color 1s ease;
+    transition: color 0.2s ease;
 }
 .followers {
     letter-spacing: 3px;
@@ -91,7 +91,7 @@
     &.dark-text1 {
         @extend .dark-text1;
     }
-    transition: color 1s ease;
+    transition: color 0.2s ease;
 }
 .today {
     color: $green-text;
